@@ -1,0 +1,14 @@
+<div id="post_content">
+	<h1 class="title">
+	<%= @post.title %>
+	</h1>
+	<p class="date">
+		Submitted <%= time_ago_in_words(@post.created_at) %>
+	</p>
+	<p class="body">
+		<%= simple_format(@post.body) %>
+	</p>
+	<%= link_to '編輯', edit_post_path(@post) , :class => 'btn btn-xs btn-primary' %>
+	<%= link_to '刪除', post_path(@post), :method => :delete, :data => { :confirm => "確定要刪除?" }, :class => 'btn btn-xs btn-danger' %></br></br>
+	<%= link_to '回到首頁', posts_path ,:class => 'btn btn-xs btn-default' %>
+<div> 

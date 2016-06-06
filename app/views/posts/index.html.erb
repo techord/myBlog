@@ -1,0 +1,9 @@
+<% @posts.each do |post| %>
+	<div class="post_wrapper">
+		<h2><%= link_to post.title, post_path(post) %></h2>
+		<p><%#= simple_format(post.body) %><%= post.body.truncate_words(3)%></p>
+		<p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+		<%#= link_to '編輯', edit_post_path(post) , :class => 'btn btn-primary' %>
+		<%#= link_to '刪除', post_path(post), :method => :delete, :data => { :confirm => "Are you sure?" }, :class => 'btn btn-danger' %>
+	</div>
+<% end %>

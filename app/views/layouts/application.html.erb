@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Johhny的亂七八糟紀錄</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div id="main_content">
+			<div id="header">
+				
+				<span></span>
+				<%= link_to "關於Johnny", "http://techord.github.io" , :class => 'btn btn-xs btn-info' %>
+				<%= link_to "發新文", new_post_path , :class => 'btn btn-xs btn-default' %>
+				<h1>Johhny的亂七八糟紀錄</h1>
+				</div>
+			<%= yield %>
+		</div>
+		<div id="footer"></div>
+	</body>
+</div>
+
+</html>
