@@ -2,5 +2,5 @@
 
 This is my RoR simple blog based on RESTful CRUD.
 
-The blog is hosted on Heroku: [https://gentle-savannah-79062.herokuapp.com](https://gentle-savannah-79062.herokuapp.com)
+The blog is hosted on Heroku: https://gentle-savannah-79062.herokuapp.com
 
